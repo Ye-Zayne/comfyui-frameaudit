@@ -1,0 +1,21 @@
+[project]
+name = "comfyui-frameaudit"
+version = "0.1.0"
+description = "Locate heuristic video exposure/chroma flicker and near-identical frame runs with scene exclusions and frame-indexed reports."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "A ad钙"}]
+dependencies = ["numpy>=1.24", "Pillow>=10"]
+
+[project.urls]
+Repository = "https://github.com/Ye-Zayne/comfyui-frameaudit"
+"Bug Tracker" = "https://github.com/Ye-Zayne/comfyui-frameaudit/issues"
+
+[tool.comfy]
+PublisherId = "ye-zayne"
+DisplayName = "FrameAudit"
+
+[tool.pytest.ini_options]
+addopts = "--import-mode=importlib"
+testpaths = ["tests"]
